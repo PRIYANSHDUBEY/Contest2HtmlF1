@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=1x&id=16368&format=png">
+    <title>Books design</title>
+
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+            <div class="brand">
+                <a href="#"><h1>Library System</h1></a>
+            </div>
+            <div class="navmenu">
+                <a href="#books">Books</a>
+                <a href="#register">Register</a>
+                <a href="#">Contuct Us</a>
+                <a href="#">Logout</a>
+            </div>
+        </nav>
+
+    <section class="Books">
+        <div class="Books-container">    
+             <h2 class="section-title">Books</h2>
+            <table class="root-table">         
+            <thead>
+                <th>Book Id</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Availabilty</th>
+            </thead>
+             <tbody>
+             <tr>
+                <td>1</td>
+                <td>
+                     <table class="nested-table">
+                      <a href="https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird" class="bookname">
+                       <p>To Kill a Mockingbird</p>
+                    </a>
+                        <tr><td>Publication Date:05/23/2006</td></tr>
+                        <tr><td>Page Count:336</td></tr>
+                        <tr><td>ISBN:9780061120084</td></tr>
+                    </table>
+                </td>
+
+                <td> Harper Lee</td>
+                <td>Southern Gothic Bildungsroman</td>
+                <td>Available</td>
+             </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                         <table class="nested-table">
+                          <a href="https://en.wikipedia.org/wiki/Jane_Eyre#Themes" class="bookname">
+                           <p>Jane Eyre</p>
+                        </a>
+                            <tr><td>Publication Date:18 July 1817</td></tr>
+                            <tr><td>Page Count:624</td></tr>
+                            <tr><td>ISBN:9780141441146</td></tr>
+                        </table>
+                    </td>
+    
+                    <td>Charlotte Brontë.</td>
+                    <td>Autobiography</td>
+                    <td>Available</td>
+                 </tr>
+                 <tr>
+                    <td>3</td>
+                    <td>
+                         <table class="nested-table">
+                          <a href="https://en.wikipedia.org/wiki/Brave_New_World" class="bookname">
+                           <p>Brave New World</p>
+                        </a>
+                            <tr><td>Publication Date:Dec 1932</td></tr>
+                            <tr><td>Page Count:311</td></tr>
+                            <tr><td>ISBN:9780099477464</td></tr>
+                        </table>
+                    </td>
+    
+                    <td>Author Name 1</td>
+                    <td>Assosiated</td>
+                    <td>Available</td>
+                 </tr>
+                 <tr>
+                    <td>4</td>
+                    <td>
+                         <table class="nested-table">
+                          <a href="https://en.wikipedia.org/wiki/Catch-22" class="bookname">
+                           <p>Catch-22</p>
+                        </a>
+                            <tr><td>Publication Date: 1953</td></tr>
+                            <tr><td>Page Count:453</td></tr>
+                            <tr><td>ISBN: 0-671-12805-1</td></tr>
+                        </table>
+                    </td>
+    
+                    <td>Joseph Heller</td>
+                    <td>Fiction</td>
+                    <td>Available</td>
+                 </tr>
+                 <tr>
+                    <td>5</td>
+                    <td>
+                         <table class="nested-table">
+                          <a href="https://en.wikipedia.org/wiki/Don_Quixote" class="bookname">
+                           <p>Don Quixote</p>
+                        </a>
+                            <tr><td>Publication Date: 1615</td></tr>
+                            <tr><td>Page Count:334</td></tr>
+                            <tr><td>ISBN: 800997997664</td></tr>
+                        </table>
+                    </td>
+    
+                    <td>Miguel de Cervantes.</td>
+                    <td>Novel</td>
+                    <td>Available</td>
+                 </tr>
+        </table>
+    </div>
+    </section>
+      
+    <section class="register" id="register">
+        <div class="form-container">
+            <h2 class="section-title">Register</h2>
+            <form action="backend.js" method="post" class="register-form">
+                <div class="input-group">
+                    <label for="f_name">First Name: </label>
+                    <input type="text" name="f_name" id="f_name" placeholder="First Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="l_name">Last Name: </label>
+                    <input type="text" name="l_name" id="l_name" placeholder="Last Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="dob">Date Of Birth: </label>
+                    <input type="date" name="dob" id="dob" required>
+                </div>
+                <div class="input-group">
+                    <label for="age">Age: </label>
+                    <input type="number" name="age" id="age" min="5" max="100" placeholder="Age" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="c_password">Confirm Password: </label>
+                    <input type="password" name="c_password" id="c_password" placeholder="Confirm Password" required>
+                </div>
+                <div class="input-group">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p>This webpage rights are reserved copywrite @PriyanshDubey787</p>
+    </footer>
+    </main>
+</body>
+</html>

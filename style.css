@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Mukta:wght@400;500;600;700&family=Pacifico&family=Playfair+Display:ital@1&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=DM+Serif+Display:ital@1&family=Lobster&family=Mukta:wght@400;500;600;700&family=Pacifico&family=Playfair+Display:ital@1&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    /* background-image:url('https://www.pexels.com/photo/desk-globe-inside-library-2808559/'); */
+    background-color: rgb(255, 187, 85);
+}
+nav{
+    font-family:Pacifico;
+    background: linear-gradient(90deg, rgb(196, 95, 32), rgb(32, 149, 21));
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+   
+}
+.brand a{
+    text-decoration: none;
+    color: rgb(132, 219, 92);
+}
+.navmenu{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .navmenu a{
+    text-decoration: none;
+    color: rgb(246, 161, 43);
+    padding: 10px 10px;
+    width: 110px;
+    text-align: center;
+    font-size: 18px;
+}
+nav a:hover{
+    font-weight: bold;
+}
+
+section{
+      width: 60%;
+      margin: auto;
+      margin-top: 20px;
+      background-color: white;
+      padding: 50px 30px 50px 30px;
+}
+.section-title{
+    margin-bottom: 20px;
+}
+.Books-container{
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+    border-collapse: collapse;
+    font-family: Cinzel;
+    
+}
+table ,table tr th,table tr td{
+      border: 2px solid black;
+      
+}
+
+tr td, tr th{
+    padding: 8px;
+    text-align: center;
+}
+
+.nested-table{
+     margin-top: 10px;
+        width: 100%;
+}
+
+.nested-table td{
+    text-align: left;
+
+}
+
+.bookname{
+    text-align: left;
+    width: 100%;
+}
+
+
+
+.form-container{
+    padding: 80px 5% 90px;
+    /* width: 100%; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: Cinzel;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+.input-group{
+    margin-bottom: 10px;
+}
+.input-group label{
+    margin-bottom: 2px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.input-group input{
+    padding: 7px 8px;
+    border-radius: 6px;
+}
+.input-group button{
+    margin-top: 10px;
+    padding: 7px 6px;
+    border-radius: 6px;
+    font-weight: bold;
+    background-color: rgb(17, 142, 34);
+    color: rgb(255, 255, 255);
+    border: 0px;
+    box-shadow: -0.5px 0.5px 0.5px rgb(103, 1, 181);
+}
+.input-group button:hover{
+    cursor: pointer;
+    background-color: rgb(85, 209, 28);
+}
+
+footer{
+    background-color: rgb(220, 114, 0);
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
